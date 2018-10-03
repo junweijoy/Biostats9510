@@ -93,9 +93,6 @@ ggplot(result,aes(factor(Size),Err.rate,color=Method))+geom_jitter(width=0.3,hei
 
 ggplot(result,aes(factor(Prop),Err.rate,color=Method))+geom_jitter(width=0.3,height = 0,size=2.5)+ylab("Type 1 Error Rate")+xlab("True P")+facet_wrap(~Size+Level)
 
-ggplot(result,aes(factor(Level),Err.rate,color=Method))+geom_point(size=2.5)+geom_jitter(width=0.3,height = 0,size=2.5)+ylab("Type 1 Error Rate")+xlab("Significance Level")+facet_wrap(~Prop+Size)
-
-
 
 
 ##Problem 3
